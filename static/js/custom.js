@@ -70,7 +70,7 @@ $(document).ready(function() {
   
   // 添加请求消息到窗口
   function addRequestMessage(message) {
-    $(".answer .tips").css({"display":"block"});    // 打赏卡隐藏
+    //$(".answer .tips").css({"display":"none"});    // 打赏卡隐藏
     chatInput.val('');
     let escapedMessage = escapeHtml(message);  // 对请求message进行转义，防止输入的是html而被浏览器渲染
     let requestMessageElement = $('<div class="row message-bubble"><img class="chat-icon" src="./static/images/avatar.png"><div class="message-text request">' +  escapedMessage + '</div></div>');
@@ -160,7 +160,7 @@ $(document).ready(function() {
     
     // 保存api key与对话数据
     let data = {
-      "apiKey" : "", // 这里填写固定 apiKey
+      "apiKey" : "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", // 这里填写固定 apiKey
     }
    
     // 判断是否使用自己的api key
